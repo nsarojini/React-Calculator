@@ -4,17 +4,17 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  // maintaining the state for result
+// maintaining the state for result
   const [result, setResult] = useState('');
-
+// buttons
   const handleClick = (e) => {
     setResult(result.concat(e.target.name));
   }
-
+// clear from the result
   const clear = () => {
     setResult("");
   }
-
+// delete
   const handleDelete = () => {
     setResult(result.slice(0, -1));
   }
